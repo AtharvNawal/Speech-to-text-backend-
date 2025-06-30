@@ -5,3 +5,5 @@ torch
 pytorch-lightning
 googletrans
 number-parser
+protobuf
+tiktoken
