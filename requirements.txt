@@ -7,3 +7,4 @@ googletrans
 number-parser
 protobuf
 tiktoken
+sentencepiece
