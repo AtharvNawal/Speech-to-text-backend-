@@ -23,7 +23,11 @@ class InputText(BaseModel):
     text: str
 
 # Load multilingual NER model
-ner = pipeline("ner", model="Davlan/xlm-roberta-base-ner-hrl", aggregation_strategy="simple")
+from transformers import AutoTokenizer, pipeline
+
+tokenizer = AutoTokenizer.from_pretrained("Davlan/xlm-roberta-base-ner-hrl", use_fast=False)
+ner = pipeline("ner", model="Davlan/xlm-roberta-base-ner-hrl", tokenizer=tokenizer, aggregation_strategy="simple")
+#ner = pipeline("ner", model="Davlan/xlm-roberta-base-ner-hrl", aggregation_strategy="simple")
 translator = Translator()
 
 def translate_to_english(text: str):
