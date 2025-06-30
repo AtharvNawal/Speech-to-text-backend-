@@ -2,7 +2,6 @@ fastapi
 uvicorn
 transformers
 torch
-pytorch-lightning==1.5.10
-
-googletrans==4.0.0rc1
+pytorch-lightning
+googletrans
 number-parser
