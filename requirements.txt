@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+torch>=1.9.0,<1.11.0
+pytorch-lightning==1.5.10
+
+googletrans==4.0.0rc1
+number-parser
